@@ -1,0 +1,91 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page {
+  background-color: #f4f4f4;
+}
+.content {
+  margin: 20rpx 20rpx 0;
+  padding: 0 20rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+.content .form-item,
+.content .uni-forms-item {
+  display: flex;
+  align-items: center;
+  min-height: 96rpx;
+  padding: 25rpx 10rpx;
+  background-color: #fff;
+  font-size: 28rpx;
+  border-bottom: 1rpx solid #ddd;
+  position: relative;
+  margin-bottom: 0;
+}
+.content .form-item .uni-forms-item__content,
+.content .uni-forms-item .uni-forms-item__content {
+  display: flex;
+}
+.content .form-item .uni-forms-item__error,
+.content .uni-forms-item .uni-forms-item__error {
+  margin-left: 200rpx;
+}
+.content .form-item:last-child,
+.content .uni-forms-item:last-child {
+  border: none;
+}
+.content .form-item .label,
+.content .uni-forms-item .label {
+  width: 200rpx;
+  color: #333;
+}
+.content .form-item .input,
+.content .uni-forms-item .input {
+  flex: 1;
+  display: block;
+  height: 46rpx;
+}
+.content .form-item .switch,
+.content .uni-forms-item .switch {
+  position: absolute;
+  right: -20rpx;
+  transform: scale(0.8);
+}
+.content .form-item .picker,
+.content .uni-forms-item .picker {
+  flex: 1;
+}
+.content .form-item .placeholder,
+.content .uni-forms-item .placeholder {
+  color: #808080;
+}
+.button {
+  height: 80rpx;
+  margin: 30rpx 20rpx;
+  color: #fff;
+  border-radius: 80rpx;
+  font-size: 30rpx;
+  background-color: #27ba9b;
+}

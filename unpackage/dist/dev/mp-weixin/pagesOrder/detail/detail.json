@@ -1,0 +1,10 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "订单详情",
+  "usingComponents": {
+    "uni-countdown": "../../uni_modules/uni-countdown/components/uni-countdown/uni-countdown",
+    "uni-popup": "../../uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "page-skeleton": "./components/PageSkeleton",
+    "xtx-guess": "../../components/XtxGuess"
+  }
+}

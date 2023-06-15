@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "商品详情",
+  "usingComponents": {
+    "uni-popup": "../../uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "address-panel": "./components/AddressPanel",
+    "service-panel": "./components/ServicePanel",
+    "pages-skeleton": "./components/PagesSkeleton",
+    "vk-data-goods-sku-popup-vue": "../../uni_modules/vk-data-goods-sku-popup/components/vk-data-goods-sku-popup/vk-data-goods-sku-popup"
+  }
+}

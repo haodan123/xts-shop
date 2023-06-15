@@ -1,0 +1,13 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "custom-navbar": "./components/CustomNavbar",
+    "category-panel": "./components/CategoryPanel",
+    "hot-panel": "./components/HotPanel",
+    "page-skeleton": "./components/PageSkeleton",
+    "xtx-swiper": "../../components/XtxSwiper",
+    "xtx-guess": "../../components/XtxGuess"
+  }
+}

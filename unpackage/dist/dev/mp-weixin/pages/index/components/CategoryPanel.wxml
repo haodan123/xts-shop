@@ -1,0 +1,1 @@
+<veiw u-s="{{['d']}}" class="category data-v-5291de87" u-i="5291de87-0" bind:__l="__l"><navigator wx:for="{{a}}" wx:for-item="item" wx:key="c" class="category-item data-v-5291de87" url="/pages/index/index" hover-class="none"><image class="icon data-v-5291de87" src="{{item.a}}" mode=""></image><text class="text data-v-5291de87">{{item.b}}</text></navigator></veiw>

@@ -1,0 +1,114 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page.data-v-a86fef1e {
+  height: 100%;
+  overflow: hidden;
+}
+.delete-button.data-v-a86fef1e {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50rpx;
+  height: 100%;
+  font-size: 28rpx;
+  color: #fff;
+  border-radius: 0;
+  padding: 0;
+  background-color: #cf4444;
+}
+.viewport.data-v-a86fef1e {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+.viewport .scroll-view.data-v-a86fef1e {
+  padding-top: 20rpx;
+}
+.address.data-v-a86fef1e {
+  padding: 0 20rpx;
+  margin: 0 20rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+.address .item-content.data-v-a86fef1e {
+  line-height: 1;
+  padding: 40rpx 10rpx 38rpx;
+  border-bottom: 1rpx solid #ddd;
+  position: relative;
+}
+.address .item-content .edit.data-v-a86fef1e {
+  position: absolute;
+  top: 36rpx;
+  right: 30rpx;
+  padding: 2rpx 0 2rpx 20rpx;
+  border-left: 1rpx solid #666;
+  font-size: 26rpx;
+  color: #666;
+  line-height: 1;
+}
+.address .item:last-child .item-content.data-v-a86fef1e {
+  border: none;
+}
+.address .user.data-v-a86fef1e {
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+  color: #333;
+}
+.address .user .contact.data-v-a86fef1e {
+  color: #666;
+}
+.address .user .badge.data-v-a86fef1e {
+  display: inline-block;
+  padding: 4rpx 10rpx 2rpx 14rpx;
+  margin: 2rpx 0 0 10rpx;
+  font-size: 26rpx;
+  color: #6667ba9b;
+  border-radius: 6rpx;
+  border: 1rpx solid #6667ba9b;
+}
+.address .locate.data-v-a86fef1e {
+  line-height: 1.6;
+  font-size: 26rpx;
+  color: #333;
+}
+.blank.data-v-a86fef1e {
+  margin-top: 300rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #888;
+}
+.add-btn.data-v-a86fef1e {
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  margin: 30rpx 20rpx;
+  color: #fff;
+  border-radius: 80rpx;
+  font-size: 30rpx;
+  background-color: #6667ba9b;
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "商品分类",
+  "usingComponents": {
+    "page-skeleton": "./components/PageSkeleton",
+    "xtx-swiper": "../../components/XtxSwiper"
+  }
+}
