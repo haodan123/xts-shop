@@ -263,6 +263,7 @@
 	const logisticList = ref([])
 	const getMemberOrderLogisticsByIdData = async () => {
 		const res = await getMemberOrderLogisticsByIdAPI(props.id)
+		console.log('物流信息',res);
 		logisticList.value = res.result.list
 	}
 	onLoad(() => {

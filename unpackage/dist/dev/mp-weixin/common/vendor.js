@@ -1506,8 +1506,8 @@ function populateParameters(fromRes, toRes) {
     appVersion: "1.0.0",
     appVersionCode: "100",
     appLanguage: getAppLanguage(hostLanguage),
-    uniCompileVersion: "3.8.4",
-    uniRuntimeVersion: "3.8.4",
+    uniCompileVersion: "3.8.12",
+    uniRuntimeVersion: "3.8.12",
     uniPlatform: "mp-weixin",
     deviceBrand,
     deviceModel: model,
@@ -1738,7 +1738,8 @@ const objectKeys = [
   "cloud",
   "serviceMarket",
   "router",
-  "worklet"
+  "worklet",
+  "__webpack_require_UNI_MP_PLUGIN__"
 ];
 const singlePageDisableKey = ["lanDebug", "router", "worklet"];
 const launchOption = wx.getLaunchOptionsSync ? wx.getLaunchOptionsSync() : null;
@@ -1749,17 +1750,13 @@ function isWxKey(key) {
   return objectKeys.indexOf(key) > -1 || typeof wx[key] === "function";
 }
 function initWx() {
-  let global2 = wx;
-  if (typeof globalThis !== "undefined" && globalThis.wx && wx !== globalThis.wx) {
-    global2 = globalThis.wx;
-  }
   const newWx = {};
-  for (const key in global2) {
+  for (const key in wx) {
     if (isWxKey(key)) {
-      newWx[key] = global2[key];
+      newWx[key] = wx[key];
     }
   }
-  if (typeof globalThis !== "undefined") {
+  if (typeof globalThis !== "undefined" && typeof requireMiniProgram === "undefined") {
     globalThis.wx = newWx;
   }
   return newWx;
@@ -6696,14 +6693,18 @@ function initDefaultProps(options, isBehavior = false) {
   }
   if (options.behaviors) {
     if (options.behaviors.includes("wx://form-field")) {
-      properties.name = {
-        type: null,
-        value: ""
-      };
-      properties.value = {
-        type: null,
-        value: ""
-      };
+      if (!options.properties || !options.properties.name) {
+        properties.name = {
+          type: null,
+          value: ""
+        };
+      }
+      if (!options.properties || !options.properties.value) {
+        properties.value = {
+          type: null,
+          value: ""
+        };
+      }
     }
   }
   return properties;

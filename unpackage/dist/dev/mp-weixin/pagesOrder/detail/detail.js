@@ -80,6 +80,7 @@ const _sfc_main = {
     const logisticList = common_vendor.ref([]);
     const getMemberOrderLogisticsByIdData = async () => {
       const res = await services_pay.getMemberOrderLogisticsByIdAPI(props.id);
+      console.log("物流信息", res);
       logisticList.value = res.result.list;
     };
     common_vendor.onLoad(() => {
